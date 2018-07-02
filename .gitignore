@@ -1,0 +1,7 @@
+__pycach__/*
+*/__pycach__/*
+*.env
+tmp/*
+*.pyc
+*.DS_Store
+local/*
