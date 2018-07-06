@@ -70,6 +70,15 @@
       </div>
     </header>
 
+    <table align="center" width="800" height="15" border="1px" bgcolor="#CCC">
+      <tr>
+        <td width="100" align="center" ><button><a target="_blank" href="{{url_for('paginapadrao_forms')}}">Cadastrar um novo Autor</a></button></td>
+        <td width="100" align="center">Editar um autor já cadastrado</td>
+        <td width="100" align="center">Postar um Artigo</td>
+        <td width="100" align="center"><button><a target="_blank" href="{{url_for('paginapadrao_formscate')}}">Adicionar uma categoria</a></button></td>
+      </tr>
+    </table>
+
 
     <!-- Post Content -->
     {% for art in artigo%}
@@ -80,21 +89,6 @@
             <h2 class="section-heading">{{art.title}}</h2>
 
             <a href="{{url_for('pagina_blog',slug=art.slug)}}"><blockquote class="blockquote">{{art.abstract}}</blockquote></a>
-            <p></p>
-
-            <p></p>
-
-            <p></p>
-
-            <p></p>
-
-            <p></p>
-
-            <p></p>
-
-            <p></p>
-
-            <p></p>
 
             <p align="center">
             <a href="#">
@@ -102,12 +96,8 @@
             </a><span class="caption text-muted">Imagem referente ao texto {{art.title}}.</span></p>
 
 
-            <p></p>
-
-            <p></p>
-
             <p>Escrito por:
-              <a href="http://{{art.author.website}}">{{art.author}}</a>. {{art.published_date}}
+              <a target="_blank" href="http://{{art.author.website}}">{{art.author}}</a>. {{art.published_date}}
               </p>
           </div>
         </div>
@@ -115,7 +105,6 @@
     </article>
     <hr>
     {% endfor%}
-    <hr>
 
     <!-- Footer -->
     <footer>
@@ -124,7 +113,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.twitter.com/allanvitor01">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -132,7 +121,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/allanvitor01">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -140,7 +129,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://github.com/allanvitor01/python_cafe">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>

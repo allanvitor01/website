@@ -101,7 +101,7 @@ class Category(db.Model):
         self.name = name
 
     def __str__(self):
-        strcateg = "Nome: " + self.nome
+        strcateg = self.nome
         return strcateg
 
     def __repr__(self):
