@@ -1,6 +1,8 @@
 from website.views import app,db
 from website.models import Category, Author, Paper
 from datetime import datetime
+from website.admin import admin
+
 app.run()
 # autor_exemplo = Author.query.filter_by(name="Allan Carneiro").first()
 # categoria_exemplo = Category.query.filter_by(name="Educacao").first()

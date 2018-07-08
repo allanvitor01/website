@@ -25,6 +25,7 @@
                     <td width="150" align="center">E-mail</td>
                     <td width="150" align="center">Website</td>
                     <td width="200" align="center">Biografia</td>
+                    <td width="50" align="center">Edição</td>
                   </tr>
                   {% for aut in author %}
                   <tr>
@@ -32,6 +33,7 @@
                     <td align="center">{{aut.email}}</td>
                     <td align="center">{{aut.website}}</td>
                     <td align="center">{{aut.bio}}</td>
+                    <td align="center"><button>Editar</button></td>
                   </tr>
                   {% endfor %}
                 </table>
